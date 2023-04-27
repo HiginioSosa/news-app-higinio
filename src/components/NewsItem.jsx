@@ -27,7 +27,7 @@ const NewsItem = ({ newsItem }) => {
 						<h5 className='card-title text-center'>{newsItem.name}</h5>
 						<p className='card-text text-justify mt-3'>{newsItem.description.slice(0, 100)}...</p>
 						<div className='mt-auto'>
-							<div className='d-flex justify-content-between align-items-end'>
+							<div className='d-flex justify-content-between align-items-end date-read-more-container'>
 								<p className='card-text text-muted'>
 									<i>{new Date(newsItem.datePublished).toLocaleDateString()}</i>
 								</p>
@@ -35,7 +35,7 @@ const NewsItem = ({ newsItem }) => {
 									href={newsItem.url}
 									target='_blank'
 									rel='noreferrer'
-									className='btn btn-primary'
+									className='btn btn-primary read-more-button'
 								>
 									Leer más...
 								</a>
